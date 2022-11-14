@@ -1,0 +1,108 @@
+:root {
+  --bg-primary: #003c8f;
+  --input-color: #939393;
+  --input-border: #cdd9ed;
+  --input-background: #fff;
+  --input-placeholder: #cbd1dc;
+  --input-border-focus: var(--bg-primary);
+  --group-color: var(--input-color);
+  --group-border: var(--input-border);
+  --group-background: #0d2c69;
+  --group-color-focus: #fff;
+  --group-border-focus: var(--input-border-focus);
+  --group-background-focus: var(--bg-primary);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  max-height: 50vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 6.5px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: rgba(54, 69, 231, 0.106);
+  position: absolute;
+  z-index: 1000;
+}
+
+html::-webkit-scrollbar-thumb {
+  cursor: progress;
+  background-color: var(--bg-primary);
+  border-radius: 5px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #1454d4;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+html::-webkit-scrollbar-thumb:active {
+  background-color: #f5b82d;
+}
+
+body {
+  margin: 0;
+  font-size: clamp(1.3vw, 20px, 16px);
+  font-family: 'Poppins', sans-serif;
+  -webkit-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+  body.show {
+    overflow-y: hidden;
+  }
+}
+
+/* Dark mode  */
+
+body.dark {
+  background-color: #000b1b;
+  color: #fff;
+}
+
+body.dark header {
+  background-color: rgba(0, 0, 0, 0.072);
+}
+
+@media screen and (max-width: 768px) {
+  body.dark .main-menu {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+body.dark .button {
+  color: #fff;
+}
+
+body.dark .fa-brands {
+  color: #fff;
+}
+
+body.dark .fa-brands:hover {
+  color: #f5b82d;
+}
+
+body.dark .form-field {
+  background-color: #00112b;
+}
