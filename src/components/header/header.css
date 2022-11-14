@@ -13,7 +13,7 @@
   -ms-flex-pack: distribute;
   justify-content: space-around;
   text-align: center;
-  background-color: rgba(255, 255, 255, .15);
+  background-color: rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
@@ -29,7 +29,7 @@
   padding: 0;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .main-menu {
     position: absolute;
     left: 0;
@@ -52,16 +52,14 @@
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
-    -webkit-transition: -webkit-transform .5s ease-in;
-    transition: -webkit-transform .5s ease-in;
-    -o-transition: transform .5s ease-in;
-    transition: transform .5s ease-in;
-    transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    -o-transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
     font-weight: 700;
   }
 }
-
-
 
 .icon-menu {
   font-size: 20px;
@@ -70,22 +68,27 @@
   font-weight: 700;
 }
 
-.fa-sun {
+.mode {
+  background-color: transparent;
+  border: none;
+  margin: none;
+  padding: none;
+  font-size: inherit;
   color: #f5b82d;
+  left: 0;
 }
 
-.fa-sun:hover{
-  transform: rotate(360deg);
+.mode:hover {
+  border-bottom: 1px solid #f5b82d;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .container-bars {
     display: none;
   }
 }
 
-
-.main-menu.show {
+.main-menu#show {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
@@ -96,11 +99,9 @@
   font-weight: 700;
 }
 
-
 .main-menu__item {
   margin: 0 7px;
 }
-
 
 .main-menu__link {
   text-decoration: none;

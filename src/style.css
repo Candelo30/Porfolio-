@@ -82,7 +82,7 @@ body.dark {
 }
 
 body.dark header {
-  background-color: rgba(0, 0, 0, 0.072);
+  background-color: rgba(0, 0, 0, 0.027);
 }
 
 @media screen and (max-width: 768px) {
