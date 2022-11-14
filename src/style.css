@@ -106,3 +106,84 @@ body.dark .fa-brands:hover {
 body.dark .form-field {
   background-color: #00112b;
 }
+
+/* Elementos principales */
+
+.main {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.section {
+  position: relative;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 60px;
+  width: 100%;
+  height: 100vh;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.container-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.button {
+  border-radius: 30px;
+  border: 2px solid var(--bg-primary);
+  padding: 16px 0;
+  width: 400px;
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
+  -webkit-transition: all ease-in .3s;
+  -o-transition: all ease-in .3s;
+  transition: all ease-in .3s;
+}
+
+.button:hover {
+  background-color: var(--bg-primary);
+  color: #fff;
+}
