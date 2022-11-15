@@ -18,7 +18,11 @@ function Home() {
         </a>
       </div>
       <figure className="container-img">
-        <img className="section-img" src="../src/img/profile-pic.png" />
+        <img
+          className="section-img"
+          src="https://res.cloudinary.com/ddffhmxpz/image/upload/v1668455809/profile-pic_qdmuuw.png"
+          alt="img-profile"
+        />
       </figure>
     </section>
   );

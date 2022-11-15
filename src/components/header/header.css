@@ -100,17 +100,25 @@
 }
 
 .main-menu__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin: 0 7px;
 }
 
 .main-menu__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  text-align: center;
   background-color: transparent;
   border: none;
-  position: relative;
 }
 
 .main-menu__link:hover {
