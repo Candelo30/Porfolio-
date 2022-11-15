@@ -1,11 +1,11 @@
 import React from 'react';
 import {
   HiBars3CenterLeft,
-  HiHome,
   HiOutlineIdentification,
   HiOutlineSparkles,
   HiOutlineRss,
 } from 'react-icons/hi2';
+import { SiHomeadvisor } from 'react-icons/si';
 import './header.css';
 
 function Header() {
@@ -61,7 +61,7 @@ function Header() {
         <ul className="main-menu" id="menu">
           <li className="main-menu__item">
             <a className="main-menu__link" href="#Home">
-              <HiHome />
+              <SiHomeadvisor />
               Home
             </a>
           </li>
