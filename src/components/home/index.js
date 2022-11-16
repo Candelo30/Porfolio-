@@ -20,7 +20,7 @@ function Home() {
       <figure className="container-img">
         <img
           className="section-img"
-          src="https://res.cloudinary.com/ddffhmxpz/image/upload/v1668455809/profile-pic_qdmuuw.png"
+          src="https://res.cloudinary.com/ddffhmxpz/image/upload/v1668458287/profile-pic_cinljc.png"
           alt="img-profile"
         />
       </figure>
